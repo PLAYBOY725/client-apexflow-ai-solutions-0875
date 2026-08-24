@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexFlow AI Solutions | Enterprise Automation & AI Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        dark: '#0f172a',
+                        accent: '#f59e0b'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text { background: linear-gradient(135deg, #6366f1, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Top Urgency Bar -->
+    <div class="bg-dark text-white text-xs py-2 px-4 text-center">
+        <span class="opacity-80">Trusted by Gurugram's top enterprises | </span>
+        <span class="text-accent font-bold">4.9★ Google Rating</span>
+        <span class="mx-2 opacity-30">|</span>
+        <a href="tel:+919876543210" class="hover:underline">Call: +91 98765 43210</a>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-2xl font-bold font-display text-dark flex items-center gap-2">
+                <div class="w-8 h-8 bg-indigo-600 rounded-lg"></div>
+                ApexFlow<span class="text-indigo-600">AI</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-medium">
+                <a href="#services" class="hover:text-indigo-600 transition">Services</a>
+                <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/919876543210?text=Hello%20ApexFlow%20AI%20Solutions,%20I%20want%20to%20inquire%20about%20your%20services." class="hidden sm:block text-slate-600 hover:text-green-600">WhatsApp</a>
+                <a href="#booking" class="bg-indigo-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">Book Consultation</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <div class="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+                <span>Verified 4.9★ Google Rating (120+ Reviews)</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold font-display leading-tight mb-6 text-dark">
+                Automate Your Business with <span class="gradient-text">Cutting-Edge AI</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-8 leading-relaxed">Stop wasting hours on manual tasks. We implement intelligent chatbots, automated lead generation, and custom workflows to scale your enterprise efficiency overnight.</p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#booking" class="bg-dark text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition">Request Strategy</a>
+                <a href="https://wa.me/919876543210?text=Hello%20ApexFlow%20AI%20Solutions,%20I%20want%20to%20inquire%20about%20your%20services." class="border border-slate-300 px-8 py-4 rounded-xl font-bold hover:bg-slate-100 transition">Chat on WhatsApp</a>
+            </div>
+        </div>
+        <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-indigo-100">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-indigo-50 p-6 rounded-2xl">
+                    <h3 class="text-3xl font-bold text-indigo-600">90%</h3>
+                    <p class="text-sm text-slate-600 mt-1">Faster Response Time</p>
+                </div>
+                <div class="bg-indigo-50 p-6 rounded-2xl">
+                    <h3 class="text-3xl font-bold text-indigo-600">40+</h3>
+                    <p class="text-sm text-slate-600 mt-1">Weekly Hours Saved</p>
+                </div>
+            </div>
+            <div class="mt-6 border-t pt-6">
+                <p class="text-slate-500 italic">"ApexFlow transformed our customer support. A true partner for growth."</p>
+                <p class="font-bold mt-2">- Gurugram Tech Lead</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold font-display text-center mb-16">Enterprise AI Solutions</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                {[
+                    {title: 'AI Chatbots', desc: '24/7 intelligent customer support & sales agents.'},
+                    {title: 'Lead Outreach', desc: 'Fully automated email and LinkedIn lead generation.'},
+                    {title: 'Custom Workflow', desc: 'Streamline operations via advanced automation.'}
+                ].map(s => (
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-2xl transition group">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-xl mb-6"></div>
+                        <h3 class="text-xl font-bold mb-3">{s.title}</h3>
+                        <p class="text-slate-600 mb-6">{s.desc}</p>
+                        <a href="#booking" class="text-indigo-600 font-semibold flex items-center gap-2">Learn more →</a>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="booking" class="py-20">
+        <div class="container mx-auto px-6 max-w-2xl">
+            <div class="bg-dark text-white p-10 rounded-3xl">
+                <h2 class="text-3xl font-bold mb-2">Book Your Strategy Call</h2>
+                <p class="text-slate-400 mb-8">Discuss your automation needs with our engineers.</p>
+                <form id="contactForm" class="space-y-4">
+                    <input type="text" placeholder="Name" required class="w-full bg-slate-800 p-4 rounded-xl border border-slate-700 outline-none focus:border-indigo-500">
+                    <input type="email" placeholder="Email" required class="w-full bg-slate-800 p-4 rounded-xl border border-slate-700 outline-none focus:border-indigo-500">
+                    <textarea placeholder="Tell us about your project" required class="w-full bg-slate-800 p-4 rounded-xl border border-slate-700 h-32 outline-none focus:border-indigo-500"></textarea>
+                    <button type="submit" class="w-full bg-indigo-600 py-4 rounded-xl font-bold hover:bg-indigo-500 transition">Request Consultation</button>
+                    <div id="formFeedback" class="hidden text-center p-4 bg-green-500/20 text-green-400 rounded-xl font-medium">Thank you! We'll contact you within 24 hours.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t">
+        <div class="container mx-auto px-6 text-center text-slate-500 text-sm">
+            <p class="font-bold text-dark mb-2">ApexFlow AI Solutions, Gurugram</p>
+            <p>Cyber City, DLF Phase 2, Gurugram, Haryana</p>
+            <p class="mt-4">&copy; 2024 ApexFlow AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form Handling
+        document.getElementById('contactForm').onsubmit = (e) => {
+            e.preventDefault();
+            document.getElementById('formFeedback').classList.remove('hidden');
+            e.target.reset();
+        };
+    </script>
+
+</body>
+</html>
